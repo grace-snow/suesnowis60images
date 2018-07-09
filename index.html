@@ -7,29 +7,44 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link href="https://fonts.googleapis.com/css?family=Codystar|Open+Sans:600,800" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Baloo|Codystar" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/main.css">
   <title>CSS Grid Image Gallery!</title>
 </head>
 
 <body>
+<div class="content-wrapper" role="none">
 
   <div class="overlay">
     <div class="overlay-inner">
-      <button class="close">× Close</button>
+      <button class="close"><span class="fa fa-times"></span> Close</button>
       <img>
     </div>
   </div>
 
-  <div class="title">
-    <h1 class="msg"><span class="mega">Sue Snow is 60</span>
+  <header class="title">
+    <h1 class="msg"><span class="mega">Sue Snow is 60!</span>
       <br>"The Image Gallery"
     </h1>
-  </div>
+  </header>
 
   <div class="wrapper">
     <section class="gallery">
     </section>
   </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer__inner">
+      <div class="go-back"><a href="https://IsSueSnow60.com"><span class="fa fa-long-arrow-alt-left"></span> <span class="underline">Back to IsSueSnow60.com</span></a></div>
+      <div class="author">
+        &copy; 2018 Grace Snow
+        <br><small>Images must not be copied. Thanks to <a href="https://twitter.com/wesbos">@WesBos</a> for some of the code</small>
+      </div>
+    </div>
+</footer>
+
 
 <script src="scripts/gallery-generator.js" async></script>
 </body>

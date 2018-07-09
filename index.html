@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Codystar" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Codystar|Open+Sans:600,800" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo|Codystar" rel="stylesheet">
   <title>CSS Grid Image Gallery!</title>
 </head>
 
@@ -31,7 +32,6 @@
 
 
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma|Codystar');
 
     * {
       box-sizing: border-box;
@@ -39,7 +39,7 @@
 
     body {
       padding: 2rem;
-      font-family: 'Baloo Tamma', sans-serif;
+      font-family:  'Open Sans', sans-serif;
       background: linear-gradient(to right, #00b09b, #96c93d);
       background: #1a2a6c;
       background: -webkit-linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
@@ -67,8 +67,8 @@
     }
 
     .msg {
-      font-family: 'Codystar', sans-serif;
-      font-weight: bold;
+      font-family: 'Codystar', 'Open Sans', sans-serif;
+      font-weight: 800;
     }
 
     .mega {
@@ -85,9 +85,10 @@
       color: rgba(85, 46, 120);
       border: 2px solid rgba(85, 46, 120);
       border-radius: 8px;
-      padding: 0.3em 0.8em;
-      font-weight: bold;
-      font-size: 1.2rem;
+      padding: 0 0.75em;
+      font-family: 'Baloo', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
       margin-bottom: 1em;
       float: right;
     }
@@ -95,6 +96,10 @@
     .close:hover {
       background: rgba(85, 46, 120);
       color: #fff;
+    }
+
+    .item:hover {
+      cursor: pointer;
     }
 
     @media (max-width: 60.25em) {
@@ -111,7 +116,7 @@
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(80px, auto));
-      grid-auto-rows: 80px;
+      grid-auto-rows: minmax(80px, 10px);
       grid-auto-flow: dense;
     }
 
@@ -148,13 +153,13 @@
       color: white;
       text-transform: uppercase;
       background: rgba(0, 0, 0, 0.7);
-      padding: 5px;
+      padding: 0.2em 1em;
+      font-family: 'Baloo', sans-serif;
     }
 
     .item:hover .item__overlay {
       transform: translateY(0);
     }
-
 
     .item.v2 {
       grid-row: span 2;

@@ -35,6 +35,15 @@
     text-align: center;
     padding: 0 0.5em;
     color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    font-size: 0.5em;
+    vertical-align: middle;
   }
 
   .msg {
@@ -215,6 +224,10 @@
     text-decoration: underline;
   }
 
+  .title__icon {
+    font-size: 1.5em;
+    padding: 0 1em;
+  }
 
     @media (max-width: 60.25em) {
     .close {
@@ -245,5 +258,9 @@
 
     .mega {
       font-size: 0.5em;
+    }
+
+    .title__icon {
+      display: none;
     }
   }

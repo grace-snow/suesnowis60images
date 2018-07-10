@@ -10,11 +10,13 @@
     background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
     margin: 0;
     padding: 0;
+    font-size: 18px;
   }
 
   .content-wrapper {
     padding: 2rem;
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2rem;
   }
 
   h1,
